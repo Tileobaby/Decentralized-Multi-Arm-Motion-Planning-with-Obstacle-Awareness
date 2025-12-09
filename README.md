@@ -39,33 +39,6 @@ Extends **Motion Planning Diffusion (MPD)** from single-arm trajectories to **mu
 
 This method does **not** require RL training and directly generates collision-aware full trajectories.
 
----
-
-## 📦 **Repository Structure**
-
-```
-my-multiarm-extension/
-│
-├── transformer_encoder/
-│   ├── transformer_state_encoder.py
-│   └── README_notes.md
-│
-├── diffusion_multiarm/
-│   ├── multiarm_cost.py
-│   ├── gibbs_sampling.py
-│   ├── run_multiarm_mpd.py
-│   └── utils.py
-│
-├── patches/
-│   ├── policy_patch.diff
-│   └── config_patch.diff
-│
-└── examples/
-    ├── example_config.yaml
-    └── demo_script.py
-```
-
----
 
 ## 🔧 **Installation**
 
