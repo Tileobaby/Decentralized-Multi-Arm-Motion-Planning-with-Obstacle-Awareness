@@ -62,35 +62,6 @@ Please ensure both projects can run independently.
 
 ## 🔗 **Integrating My Code with the Original Repositories**
 
-### **A. Add the Transformer Encoder to the MultiArm RL Framework**
-
-Copy the encoder into the policy module:
-
-```
-cp transformer_encoder/transformer_state_encoder.py  multiarm/policy/
-```
-
-(Optional) Apply patch:
-
-```
-patch -p1 < patches/policy_patch.diff
-```
-
----
-
-### **B. Add Multi-Robot Extensions to MPD**
-
-```
-cp diffusion_multiarm/*.py  motion-planning-diffusion/mpd/
-```
-
-Run the multi-robot diffusion planning:
-
-```
-python run_multiarm_mpd.py --num_robots 3
-```
-
----
 
 ## 🎯 **Usage Examples**
 
@@ -109,25 +80,7 @@ python main.py --mode benchmark --tasks_path benchmark/ --load ours/ours.pth --n
 
 ---
 
-## 📊 **Features Added**
 
-### ✔ Transformer for neighbor encoding
-
-### ✔ Inter-robot collision cost
-
-### ✔ Multi-robot Gibbs Sampling
-
-### ✔ Configurable N-arm trajectory denoising
-
-### ✔ Additional evaluation metrics
-
-* Success rate
-* Environment collision rate
-* Inter-robot collision rate
-
-### ✔ Architecture diagrams (included in paper, not in repo)
-
----
 
 ## 📚 **References**
 
