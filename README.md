@@ -97,20 +97,15 @@ python run_multiarm_mpd.py --num_robots 3
 ### **Run Single / Multi-Robot Diffusion Planning**
 
 ```
-python run_multiarm_mpd.py --num_robots 3 --with_obstacles 1
+python inference_multi.py --model_id EnvSpheres3D-RobotPanda --seed 0 --n_samples 50 --n_robots 5 --robot_spacing 0.3 --render True
 ```
 
 ### **Test the Transformer Policy in MultiArm Environment**
 
 ```
-python multiarm_env_test.py --policy transformer
+python main.py --mode benchmark --tasks_path benchmark/ --load ours/ours.pth --num_processes 1 --gui
 ```
 
-### **Demo Script**
-
-```
-python examples/demo_script.py --robots 2
-```
 
 ---
 
